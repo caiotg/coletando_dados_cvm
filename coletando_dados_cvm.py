@@ -66,9 +66,6 @@ def lista_demonstrativos(baseDados):
 
 if __name__ == '__main__':
 
-    from pandas.core.base import PandasObject
-    PandasObject.view = view
-
     caminhoDados = r'C:\Users\Caio\Documents\dev\github\coletando_dados_cvm\dados_cvm'
 
     # pegando_dados_cvm(caminhoDados)
@@ -88,7 +85,7 @@ if __name__ == '__main__':
                          (baseDados['tipo_doc'] == 'dfp') & 
                          (baseDados['DS_CONTA'] == 'Resultado Bruto')]
     
-    iraniDRE.view()
+    print(iraniDRE)
 
 
     
